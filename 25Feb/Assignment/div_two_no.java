@@ -1,9 +1,11 @@
-divide two numbers without using the division operator
+
 class div_two_no {
     public int divide(int dividend, int divisor) {
         // Handle edge cases
         if (divisor == 0) {
             throw new IllegalArgumentException("Divisor cannot be zero");
+
+            
         }
         if (dividend == Integer.MIN_VALUE && divisor == -1) {
             return Integer.MAX_VALUE; // Handle overflow case
